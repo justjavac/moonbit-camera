@@ -1,0 +1,16 @@
+import {
+  "justjavac/ffi",
+}
+
+supported_targets = "native"
+
+options(
+  "native-stub": [
+    "camera_buffer.c",
+    "camera_native.c",
+    "camera_windows.c",
+    "camera_linux.c",
+    "camera_macos.c",
+  ],
+  targets: { "native.mbt": [ "native" ] },
+)
