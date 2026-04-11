@@ -1,0 +1,14 @@
+{
+  "name": "justjavac/camera",
+  "source": "src",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "repository": "https://github.com/justjavac/moonbit-camera",
+  "license": "MIT",
+  "deps": {
+    "justjavac/ffi": "0.2.1"
+  },
+  "keywords": ["moonbit", "native", "camera", "capture"],
+  "description": "Native camera discovery and capture-mode helpers.",
+  "preferred-target": "native"
+}
