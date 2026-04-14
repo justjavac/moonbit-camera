@@ -1,0 +1,57 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbit_native/camera"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+
+// Errors
+
+// Types and methods
+pub(all) struct CameraDevice {
+  id : String
+  name : String
+  facing : Facing
+  mode : CaptureMode
+  torch : Bool
+} derive(Eq, @debug.Debug)
+pub fn CameraDevice::is_high_definition(Self) -> Bool
+pub fn CameraDevice::label(Self) -> String
+pub fn CameraDevice::list() -> Array[Self]
+pub fn CameraDevice::parse_listing(String) -> Array[Self]
+pub fn CameraDevice::supports_low_latency_preview(Self) -> Bool
+pub impl Show for CameraDevice
+
+pub(all) struct CaptureMode {
+  width : Int
+  height : Int
+  fps : Int
+  pixel_format : PixelFormat
+} derive(Eq, @debug.Debug)
+pub fn CaptureMode::frame_interval_ms(Self) -> Int
+pub fn CaptureMode::normalize(Self) -> Self
+pub impl Show for CaptureMode
+
+pub(all) enum Facing {
+  Front
+  Back
+  External
+} derive(Eq, @debug.Debug)
+pub fn Facing::name(Self) -> String
+pub impl Show for Facing
+
+pub(all) enum PixelFormat {
+  Mjpeg
+  Yuy2
+  Nv12
+  Rgba
+} derive(Eq, @debug.Debug)
+pub fn PixelFormat::name(Self) -> String
+pub impl Show for PixelFormat
+
+// Type aliases
+
+// Traits
+
