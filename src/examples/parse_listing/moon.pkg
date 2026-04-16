@@ -1,0 +1,10 @@
+import {
+  "moonbit_native/camera",
+}
+
+supported_targets = "native"
+
+options(
+  "is-main": true,
+  targets: { "main.mbt": [ "native" ] },
+)
