@@ -1,0 +1,30 @@
+codecov:
+  notify:
+    after_n_builds: 3
+
+comment:
+  after_n_builds: 3
+  layout: "diff, flags, files"
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+    patch:
+      default:
+        target: auto
+
+flag_management:
+  default_rules:
+    carryforward: true
+  individual_flags:
+    - name: linux
+      paths:
+        - src/
+    - name: macos
+      paths:
+        - src/
+    - name: windows
+      paths:
+        - src/
