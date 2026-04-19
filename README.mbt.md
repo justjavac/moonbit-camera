@@ -1,10 +1,10 @@
 # moonbit_native/camera
 
-[![CI](https://github.com/moonbit-native/moonbit-camera/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/moonbit-native/moonbit-camera/actions/workflows/ci.yml)
-[![coverage](https://img.shields.io/codecov/c/github/moonbit-native/moonbit-camera/main?label=coverage)](https://codecov.io/gh/moonbit-native/moonbit-camera)
-[![linux](https://img.shields.io/codecov/c/github/moonbit-native/moonbit-camera/main?flag=linux&label=linux)](https://codecov.io/gh/moonbit-native/moonbit-camera)
-[![macos](https://img.shields.io/codecov/c/github/moonbit-native/moonbit-camera/main?flag=macos&label=macos)](https://codecov.io/gh/moonbit-native/moonbit-camera)
-[![windows](https://img.shields.io/codecov/c/github/moonbit-native/moonbit-camera/main?flag=windows&label=windows)](https://codecov.io/gh/moonbit-native/moonbit-camera)
+[![CI](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml)
+[![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-camera)
+[![linux](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?flag=linux&label=linux)](https://codecov.io/gh/justjavac/moonbit-camera)
+[![macos](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?flag=macos&label=macos)](https://codecov.io/gh/justjavac/moonbit-camera)
+[![windows](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?flag=windows&label=windows)](https://codecov.io/gh/justjavac/moonbit-camera)
 
 Native-only camera discovery helpers for MoonBit.
 
