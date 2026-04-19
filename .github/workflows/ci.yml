@@ -52,6 +52,9 @@ jobs:
       - name: Show MoonBit version
         run: moon version
 
+      - name: Update MoonBit dependencies
+        run: moon update
+
       - name: Check native packages
         run: moon check --target native
 
@@ -87,6 +90,7 @@ jobs:
       - name: Verify formatting and generated files
         shell: bash
         run: |
+          moon update
           moon fmt --check
           moon check --target native
           moon info --target native
