@@ -59,7 +59,7 @@ jobs:
         run: moon test --target native --enable-coverage
 
       - name: Export Cobertura coverage
-        run: moon coverage analyze -p moonbit_native/camera -- -f cobertura -o "${{ matrix.coverage_file }}"
+        run: moon coverage analyze -p justjavac/camera -- -f cobertura -o "${{ matrix.coverage_file }}"
 
       - name: Upload coverage
         uses: codecov/codecov-action@v5

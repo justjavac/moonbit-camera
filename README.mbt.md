@@ -1,4 +1,4 @@
-# moonbit_native/camera
+# justjavac/camera
 
 [![CI](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml)
 [![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-camera)

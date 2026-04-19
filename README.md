@@ -1,4 +1,4 @@
-# moonbit_native/camera
+# justjavac/camera
 
 [![CI](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/justjavac/moonbit-camera/actions/workflows/ci.yml)
 [![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-camera)
@@ -6,7 +6,7 @@
 [![macos](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?flag=macos&label=macos)](https://codecov.io/gh/justjavac/moonbit-camera)
 [![windows](https://img.shields.io/codecov/c/github/justjavac/moonbit-camera/main?flag=windows&label=windows)](https://codecov.io/gh/justjavac/moonbit-camera)
 
-`moonbit_native/camera` is a native-only MoonBit package for camera discovery and
+`justjavac/camera` is a native-only MoonBit package for camera discovery and
 small capture-mode helpers. It gives applications a portable first pass over
 available camera devices before they open a platform-specific capture session.
 
@@ -33,7 +33,7 @@ implementation file for each operating system.
 ## Install
 
 ```bash
-moon add moonbit_native/camera
+moon add justjavac/camera
 ```
 
 The package is native-only. Use `--target native` when checking, testing, or
