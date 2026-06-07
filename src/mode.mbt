@@ -22,7 +22,7 @@ fn min_one(value : Int) -> Int {
 ///     width: 0,
 ///     height: -720,
 ///     fps: 0,
-///     pixel_format: @camera.PixelFormat::Nv12,
+///     pixel_format: Nv12,
 ///   }.normalize()
 ///   inspect(mode.width, content="1")
 ///   inspect(mode.height, content="1")
@@ -52,7 +52,7 @@ pub fn CaptureMode::normalize(self : CaptureMode) -> CaptureMode {
 ///     width: 1280,
 ///     height: 720,
 ///     fps: 25,
-///     pixel_format: @camera.PixelFormat::Mjpeg,
+///     pixel_format: Mjpeg,
 ///   }
 ///   inspect(mode.frame_interval_ms(), content="40")
 /// }
@@ -116,13 +116,8 @@ pub fn PixelFormat::name(self : PixelFormat) -> String {
 ///   let device = @camera.CameraDevice::{
 ///     id: "camera-0",
 ///     name: "HD Camera",
-///     facing: @camera.Facing::External,
-///     mode: @camera.CaptureMode::{
-///       width: 1280,
-///       height: 720,
-///       fps: 30,
-///       pixel_format: @camera.PixelFormat::Mjpeg,
-///     },
+///     facing: External,
+///     mode: { width: 1280, height: 720, fps: 30, pixel_format: Mjpeg },
 ///     torch: false,
 ///   }
 ///   inspect(device.is_high_definition(), content="true")
@@ -145,13 +140,8 @@ pub fn CameraDevice::is_high_definition(self : CameraDevice) -> Bool {
 ///   let device = @camera.CameraDevice::{
 ///     id: "camera-0",
 ///     name: "Fast Camera",
-///     facing: @camera.Facing::External,
-///     mode: @camera.CaptureMode::{
-///       width: 640,
-///       height: 480,
-///       fps: 60,
-///       pixel_format: @camera.PixelFormat::Yuy2,
-///     },
+///     facing: External,
+///     mode: { width: 640, height: 480, fps: 60, pixel_format: Yuy2 },
 ///     torch: false,
 ///   }
 ///   inspect(device.supports_low_latency_preview(), content="true")
@@ -173,13 +163,8 @@ pub fn CameraDevice::supports_low_latency_preview(self : CameraDevice) -> Bool {
 ///   let device = @camera.CameraDevice::{
 ///     id: "camera-0",
 ///     name: "USB Camera",
-///     facing: @camera.Facing::External,
-///     mode: @camera.CaptureMode::{
-///       width: 1280,
-///       height: 720,
-///       fps: 30,
-///       pixel_format: @camera.PixelFormat::Mjpeg,
-///     },
+///     facing: External,
+///     mode: { width: 1280, height: 720, fps: 30, pixel_format: Mjpeg },
 ///     torch: false,
 ///   }
 ///   inspect(device.label(), content="external:USB Camera")

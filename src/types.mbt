@@ -63,7 +63,7 @@ fn[T : Debug] write_debug_show(value : T, logger : &Logger) -> Unit {
 /// The output intentionally matches the enum constructor name. This keeps test
 /// snapshots compact while preserving enough detail to distinguish front,
 /// back, and external devices during debugging.
-pub impl Show for Facing with output(self, logger : &Logger) -> Unit {
+pub impl Show for Facing with fn output(self, logger : &Logger) -> Unit {
   write_debug_show(self, logger)
 }
 
@@ -73,7 +73,7 @@ pub impl Show for Facing with output(self, logger : &Logger) -> Unit {
 /// The output is the MoonBit constructor name, which is useful for developer
 /// diagnostics. Use `PixelFormat::name` when a lowercase user-facing or
 /// serialized label is needed.
-pub impl Show for PixelFormat with output(self, logger : &Logger) -> Unit {
+pub impl Show for PixelFormat with fn output(self, logger : &Logger) -> Unit {
   write_debug_show(self, logger)
 }
 
@@ -83,7 +83,7 @@ pub impl Show for PixelFormat with output(self, logger : &Logger) -> Unit {
 /// The representation includes every field so tests can snapshot the complete
 /// negotiated or default mode. For UI labels, prefer composing the individual
 /// fields with `PixelFormat::name`.
-pub impl Show for CaptureMode with output(self, logger : &Logger) -> Unit {
+pub impl Show for CaptureMode with fn output(self, logger : &Logger) -> Unit {
   write_debug_show(self, logger)
 }
 
@@ -93,6 +93,6 @@ pub impl Show for CaptureMode with output(self, logger : &Logger) -> Unit {
 /// The representation includes id, native name, facing hint, mode, and torch
 /// metadata. It is intended for diagnostics and snapshot tests rather than
 /// compact UI copy.
-pub impl Show for CameraDevice with output(self, logger : &Logger) -> Unit {
+pub impl Show for CameraDevice with fn output(self, logger : &Logger) -> Unit {
   write_debug_show(self, logger)
 }

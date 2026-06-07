@@ -46,7 +46,7 @@ fn camera_id(index : Int) -> String {
 pub fn CameraDevice::parse_listing(output : String) -> Array[CameraDevice] {
   let devices : Array[CameraDevice] = []
   for line in output.split("\n").to_array() {
-    let name = line.trim().to_string()
+    let name = line.trim().to_owned()
     if name != "" {
       devices.push({
         id: camera_id(devices.length()),
